@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDFAFF"
+    tools:context=".Activities.InfoForDelivery">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EDFAFF">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/literata"
+                android:gravity="center"
+                android:text="Info for Delivery"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.001" />
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_button_background"
+                android:elevation="10dp"
+                android:src="@drawable/arrow_backward"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.041"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_name_ifd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="30dp"
+
+                android:background="@drawable/edit_text_background"
+                android:drawableStart="@drawable/logo_person_brown"
+                android:elevation="5dp"
+                android:ems="20"
+                android:gravity="center"
+                android:hint="Name        "
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#724444"
+                android:textColorHint="#724444"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+            <EditText
+                android:id="@+id/et_phone_ifd"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableStart="@drawable/logo_phone_brown"
+                android:elevation="5dp"
+                android:ems="20"
+                android:gravity="center"
+                android:hint="Phone       "
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#724444"
+                android:textColorHint="#724444"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_name_ifd" />
+
+            <EditText
+                android:id="@+id/et_location_ifd"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableStart="@drawable/logo_location_brown"
+                android:elevation="5dp"
+                android:ems="20"
+                android:gravity="center"
+                android:hint="Address      "
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#724444"
+                android:textColorHint="#724444"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/img_location"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_phone_ifd" />
+
+            <ImageView
+                android:id="@+id/img_location"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/logo_current_location"
+                app:layout_constraintBottom_toBottomOf="@+id/et_location_ifd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/et_location_ifd" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_COrder_ifd"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/yellow_button_background"
+        android:gravity="center"
+        android:text="Confirm Order"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:indeterminateTint="#FF9900"
+        android:progressTint="#FF9900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

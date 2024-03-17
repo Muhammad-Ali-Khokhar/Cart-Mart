@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "446549402443",
+    "project_id": "cart-mart-745ea",
+    "storage_bucket": "cart-mart-745ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446549402443:android:ad5679ada3a71099e9fece",
+        "android_client_info": {
+          "package_name": "com.example.cartmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446549402443-2rlaprrd57o0atrpr8gapdrh5orv9l93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-j3bkU2uxHyW5wz7URtHQ5tWZpVxKzc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446549402443-2rlaprrd57o0atrpr8gapdrh5orv9l93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446549402443:android:e8b72247c5a7a5cfe9fece",
+        "android_client_info": {
+          "package_name": "com.example.cartmarto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446549402443-2rlaprrd57o0atrpr8gapdrh5orv9l93.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-j3bkU2uxHyW5wz7URtHQ5tWZpVxKzc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446549402443-2rlaprrd57o0atrpr8gapdrh5orv9l93.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
