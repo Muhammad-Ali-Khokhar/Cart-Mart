@@ -1,4 +1,4 @@
-![Splash Screen](https://github.com/Muhammad-Ali-Khokhar/TicTacToe/blob/master/Images/Splash%20Screen.jpg)
+![Splash Screen](https://github.com/Muhammad-Ali-Khokhar/Cart-Mart/blob/master/Cart%20Mart.png)
 
 # Cart Mart - User App Repository
 
